@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./addtask.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Task Manager</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li>
+        <p class="nav-text">Task Manager</p>
+        <img src="/assets/ayshanav.png" alt="Logo">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a class="nav-icon" href="./googleauth/index.html">
+          <i class="fa-regular fa-user fa-fade icon"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="container1">
+    <div class="left-text">
+      <h1 class="heading1">Manage Your Tasks Effortlessly</h1>
+      <h2 class="subheading">Keep track of your tasks and get things done easily.</h2>
+      <p class="description">
+        Task management systems are changing how we stay organized, making it easier to get things done and reach our goals.
+      </p>
+    </div>
+  
+    <div class="right-images">
+      <div class="div1">
+        <video src="./7550639-uhd_3840_2160_30fps.mp4" class="video1" autoplay muted loop></video>
+      </div>
+      <div class="div2">
+        <video src="./8439805-hd_1080_1920_25fps.mp4" class="video2" autoplay muted loop></video>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container2">
+  <div class="header">
+    <h1>📝 My Task Manager</h1>
+  </div>
+
+  <div class="container">
+    <!-- To Do Column -->
+    <div class="column" id="todo-column">
+      <h2>To Do</h2>
+      <div id="todo-tasks"></div>
+      <button class="create-btn" id="create-task-btn">+ Create Task</button>
+    </div>
+
+    <!-- In Progress Column -->
+    <div class="column" id="in-progress-column">
+      <h2>In Progress</h2>
+      <div id="in-progress-tasks"></div>
+    </div>
+
+    <!-- Done Column -->
+    <div class="column" id="done-column">
+      <h2>Done</h2>
+      <div id="done-tasks"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="task-modal" class="modal">
+    <div class="modal-content">
+  
+      <input type="text" id="task-title" placeholder="Task Title" required />
+      <textarea id="task-description" placeholder="Task Description"></textarea>
+      <input type="text" id="task-assigned" placeholder="Assigned To" />
+      <input type="date" id="task-due-date" placeholder="Due Date" />
+      <button class="save-btn" id="save-task-btn">Save</button>
+      <button class="close-btn" id="close-modal-btn">Close</button>
+    </div>
+  </div>
+  </div>
+
+  <script src="./appp.js" type="module"></script>
+</body>
+</html>
+
+

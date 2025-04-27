@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up basic body styling and center content */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack navbar and auth-container vertically */
+    align-items: center;
+    min-height: 100vh; /* Cover full screen */
+    background-color: #f4f4f4; /* Light background */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    width: 100%; /* Full width */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a0a0a;
+    padding: 10px 20px;
+    flex-wrap: nowrap; /* Prevent wrapping initially */
+  }
+  
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between list items */
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-text {
+    padding-top: 1px;
+    display: inline-block;
+    font-size: 1.2rem;
+    white-space: nowrap; /* Prevent breaking into two lines */
+  }
+  
+  .nav-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+    padding: 5px 20px; /* Better clickable area */
+  }
+  
+  .nav-icon:hover {
+    color: #f0a500; /* Hover color for icon */
+  }
+  
+  /* Navbar image (logo) */
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Responsive Design for very small screens */
+  @media (max-width: 300px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        gap: 10px;
+    }
+  
+    .navbar ul {
+        width: 100%; /* Full width for ul */
+        justify-content: space-between; /* Space between items */
+    }
+  
+    .nav-text {
+        font-size: 1rem; /* Smaller font size on small screens */
+    }
+  
+    .nav-icon {
+        font-size: 18px; /* Slightly bigger icons */
+    }
+  }
+  
+  /* Authentication Container Styling */
+  #auth-container, #welcome-page {
+    background: #e0e2df;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(7, 110, 189, 0.1);
+    width: 350px;
+    text-align: center;
+    margin-top: 50px; /* Add margin to separate from navbar */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Inputs and Buttons Styling */
+  input, button {
+    padding: 0.5rem;
+    border: 1px solid #090909;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+  }
+  .signup-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Google icon inside button */
+  .google-icon {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #f6f1f7;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    background-color:#323534;
+    color:rgb(248, 241, 241)
+  }
+  
+  /* Link Styling */
+  a {
+    color: #095b88;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .signup-para{
+    margin-bottom: 1rem;
+  }
+  /* Hover Effect on Auth Container
+  #auth-container:hover {
+    background-color: #747274;
+  } */
